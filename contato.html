@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Argoleiras</title>
+    <title>Contato</title>
   </head>
   <body>
     <div class="d-flex flex-column wrapper">
@@ -55,7 +55,7 @@
                 <a href="login.html" class="nav-link text-white">Entrar</a>
               </li>
               <li class="nav-item">
-                <span class="badge rounded-pill bg-light text-info position-absolute ms-4 mt-0" title="5 produto(s) no carrinho"><small>5</small></span>
+                <span class="badge rounded-pill bg-light text-secondary position-absolute ms-4 mt-0" title="5 produto(s) no carrinho"><small>5</small></span>
                 <a href="carrinho.html" class="nav-link text-white"><i class="bi-cart" style="font: size 24px;line-height: 24px;"></i></a>
               </li>
 
@@ -67,37 +67,40 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img style="height: 400px; width: 700px;" src="img/Argoleiras.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img style="height: 400px; width: 700px;" src="img/Pulseira.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img style="height: 400px; width: 700px;" src="img/piercing de nariz slide.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <hr class="mt-3">
-  </div>
-
-
 <main class="flex-fill">
   <div class="container">
+    <div class="row justify-content-center">
+      <form class="col-sm-10 col-md-8 col-lg-6">
+          <h1>Entre em Contato</h1>
 
+          <div class="form-floating mb-3">
+              <input type="text" id="txtNomeCompleto" class="form-control" placeholder=" " autofocus>
+              <label for="txtNomeCompleto">Nome Completo</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+              <input type="email" id="txtEmail" class="form-control" placeholder=" ">
+              <label for="txtEmail">E-mail</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <textarea id="txtMensagem" class="form-control" placeholder=" " style="height: 200px;"></textarea>
+              <label for="txtMensagem">Mensagem</label>
+          </div>
+
+          <button type="button" onclick="window.location.href='/confirmcontato.html'" class="btn btn-lg btn-info">Enviar Mensagem</button>
+
+          <p class="mt-3">
+              Faremos nosso melhor para responder sua mensagem em até 2 dias úteis.
+          </p>
+
+          <p class="mt-3">
+              Atenciosamente,<br>
+              Central de Relacionamento Argoleiras
+          </p>
+      </form>
   </div>
-
+  </div>
 </main>
 
 
