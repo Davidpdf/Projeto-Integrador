@@ -28,9 +28,9 @@ label .text-dark {
     transition: color 0.2s ease;
 }
 
-.btn-check:checked+.btn-outline-danger .text-dark,
-.btn-check:active+.btn-outline-danger .text-dark,
-.btn-check:hover+.btn-outline-danger .text-dark {
+.btn-check:checked+.btn-outline-info .text-dark,
+.btn-check:active+.btn-outline-info .text-dark,
+.btn-check:hover+.btn-outline-info .text-dark {
     transition: color 0.2s ease;
     color: white !important;
 }
